@@ -1,0 +1,38 @@
+### Downloading and transferring files
+## wget and curl
+
+# curl -O http://path/filename
+ls -l # ls commentaries
+# head, less, more, tail, tail -n
+
+### QC and trimming
+# cd source and code dir
+sudo apt-get -y update && \
+sudo apt-get -y install trimmomatic fastqc python-pip \
+   samtools zlib1g-dev ncurses-dev python-dev
+pip install multiqc   
+
+cd ~/
+mkdir data
+mkdir data/raw
+mkdir data/processed
+wget ${datapath}$datafiles data/raw
+
+# check if number of lines in fastq files are equal for R1 and R2, and if it =int*4
+# run fastQC
+
+fastqc -h # options. Note options --nano, --nogroup, --contaminants, --adapters
+fastqc SRR1976948_1.fastq.gz --outdir data/processed/SRR1976948_1 #! data file names to change
+
+
+curl -O -L http://dib-training.ucdavis.edu.s3.amazonaws.com/mRNAseq-semi-2015-03-04/TruSeq2-PE.fa
+#! data filenames to change
+TrimmomaticPE SRR1976948_1.fastq.gz \
+                 SRR1976948_2.fastq.gz \
+        SRR1976948_1.qc.fq.gz s1_se \
+        SRR1976948_2.qc.fq.gz s2_se \
+        ILLUMINACLIP:TruSeq2-PE.fa:2:40:15 \
+        LEADING:2 TRAILING:2 \
+        SLIDINGWINDOW:4:2 \
+        MINLEN:25
+        
