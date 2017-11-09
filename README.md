@@ -2,6 +2,8 @@
 RNA-Seq tutorial materials - slides, training data, code lines
 Training materials - https://zenodo.org/record/61765#.We6iIBOCzVE
 
+# ETHERPAD WITH LINKS FOR THIS WORKSHOP IS HERE: 
+https://beta.etherpad.org/p/H9l6EdbQfR
 
 TENTATIVE CURRICULUM
 
