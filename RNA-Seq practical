@@ -36,3 +36,33 @@ TrimmomaticPE SRR1976948_1.fastq.gz \
         SLIDINGWINDOW:4:2 \
         MINLEN:25
         
+####### salmon mapping the data ###########
+# get the reference for the data (Drosophila melanogaster) as a multifasta for coding regions
+# get the data from 
+curl -O https://zenodo.org/record/61765/files/GSM461177_untreat_paired_subset_1.fastq
+curl -O https://zenodo.org/record/61765/files/GSM461177_untreat_paired_subset_2.fastq
+curl -O https://zenodo.org/record/61765/files/GSM461178_untreat_paired_subset_1.fastq
+curl -O https://zenodo.org/record/61765/files/GSM461178_untreat_paired_subset_2.fastq
+
+curl -O https://zenodo.org/record/61765/files/GSM461180_treat_paired_subset_1.fastq
+curl -O https://zenodo.org/record/61765/files/GSM461180_treat_paired_subset_2.fastq
+curl -O https://zenodo.org/record/61765/files/GSM461181_treat_paired_subset_1.fastq
+curl -O https://zenodo.org/record/61765/files/GSM461181_treat_paired_subset_2.fastq
+
+salmon index --index dros_orfs --type quasi --transcripts orf_coding.fasta.gz
+
+# pseudo-map with salmon
+
+for i in *.fastq.gz
+do
+    salmon quant -i dros_orfs --libType U -r $i -o $i.quant --seqBias --gcBias
+done
+
+
+#python script for read conversion
+curl -L -O https://raw.githubusercontent.com/ngs-docs/angus/change_link_for_edgeR_script/_static/gather-counts.py
+python2 gather-counts.py
+
+#analysis R script (edgeR) - to edit !!!
+# curl -L -O https://github.com/ngs-docs/angus/raw/change_link_for_edgeR_script/_static/yeast.salmon.R
+# Rscript --no-save yeast.salmon.R
