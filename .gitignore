@@ -1,0 +1,4 @@
+# local files not to sync
+LocalFiles/*
+soft/*
+Pics/*

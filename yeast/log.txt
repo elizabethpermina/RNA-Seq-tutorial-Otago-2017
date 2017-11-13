@@ -1,0 +1,500 @@
+  235  mv Sample1/blast.tab.sorted.length.txt ./
+  236  cat blast.tab.sorted.length.txt | cut -f6
+  237  cat blast.tab.sorted.length.txt | cut -f5
+  238  cat blast.tab.sorted.length.txt | cut -f5
+  239  mv Sample1/blast.tab.sorted.length.txt ./
+  240  cat blast.tab.sorted.length.txt | cut -f5
+  241  cat blast.tab.sorted.length.txt | cut -f4
+  242  cat blast.tab.sorted.length.txt | cut -f4 | uniq
+  243  cat blast.tab.sorted.length.txt | cut -f4 | uniq > blast.tab.sorted.length.uniq.txt
+  244  ls
+  245  ls ./
+  246  ls ../
+  247  ls ../..
+  248  ls ../../..
+  249  ls ../../../results/
+  250  ls ../../../results/Assembled_Sequence/
+  251  ls ../../../results/Assembled_Sequence/edena*
+  252  ls ../../../results/Assembled_Sequence/edenaRaw*_contigs.fasta
+  253  cat ../../../results/Assembled_Sequence/edenaRaw*_contigs.fasta #> assembly.seq.for.alignment
+  254  cat ../../../results/Assembled_Sequence/edenaRaw*_contigs.fasta > assembly.seq.for.alignment
+  255  awk '/^>/ {printf("%s%s\t",(N>0?"\n":""),$0);N++;next;} {printf("%s",$0);} END {printf("\n");}' < assembly.seq.for.alignment > assembly.seq.for.alignment.tab
+  256  ls
+  257  grep -Fwf blast.tab.sorted.length.uniq.txt assembly.seq.for.alignment.tab | head
+  258  grep -Fwf blast.tab.sorted.length.uniq.txt assembly.seq.for.alignment.tab | tr "\t" "\n" > assembly.seq.for.alignment.fasta
+  259  nano test1
+  260  ls /Users/elizabethpermina/Documents/1_OGFfiles/NZGL02390_follow-up/scratch/Part1/
+  261  cd /Users/elizabethpermina/Documents/1_OGFfiles/NZGL02390_follow-up/scratch/Part1/
+  262  mv Sample4_5_6_7.aln 5000.aln
+  263  ssh -P 32080 epermina@163.7.140.15
+  264  ssh -p 32080 epermina@163.7.140.15
+  265  ssh -p 32080 epermina@163.7.140.15
+  266  ssh -P 32080 epermina@163.7.140.15
+  267  ssh -p 32080 epermina@163.7.140.15
+  268  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  269  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  270  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  271  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  272  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  273  ssh epermina@163.7.140.15 -p 32080
+  274  ssh epermina@163.7.140.15 -p 32080
+  275  ssh epermina@163.7.140.15 -p 32080
+  276  ssh epermina@163.7.140.15 -p 32080
+  277  ssh epermina@163.7.140.15 -p 32080
+  278  find . -name "r-novice-inflammation"
+  279  ls /Users/elizabethpermina//Documents/1_OGFfiles/SC_2016/r-novice-inflammation/
+  280  ls /Users/elizabethpermina//Documents/1_OGFfiles/SC_2016/r-novice-inflammation/data
+  281  find . -name "*gapminder.csv*"
+  282  ls
+  283  cd Documents/1_OGFfiles/NZGL01174/
+  284  ls code
+  285  ls *
+  286  ls -l *
+  287  ls -1 *
+  288  pwd
+  289  pwd
+  290  ls 
+  291  ssh epermina@163.7.140.15 -p 32080
+  292  ssh -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/* ./
+  293  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/* ./
+  294  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-06-21-1_S6_L001_R1_001.fastq.gz ./
+  295  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-06-*.fastq.gz ./
+  296  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-07-*.fastq.gz ./
+  297  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-08-*.fastq.gz ./
+  298  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-09-*.fastq.gz ./
+  299  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-10-*.fastq.gz ./
+  300  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-11-*.fastq.gz ./
+  301  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-12-*.fastq.gz ./
+  302  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-13-*.fastq.gz ./
+  303  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-14-*.fastq.gz ./
+  304  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-15-*.fastq.gz ./
+  305  scp -P 32080 epermina@163.7.140.15:project/nzgl01174/archive/NZ01174_C9T78ANXX_fastq/C9T78ANXX-1174-16-*.fastq.gz ./
+  306  pwd
+  307  cd Documents/1_OGFfiles/Workshop
+  308  ls test
+  309  nano test
+  310  cat test | sort | uniq -c
+  311  cd
+  312  cd Documents/1_OGFfiles/OG3217/QC/
+  313  more *
+  314  cat * | awk '{if($3==$3+0 && $3<))print $1,$2,$3,$4}' | sort -n
+  315  for i in Galaxy*; do cat $i | awk '$1 < NUMBER { print }' | wc -l ; done # sort -n
+  316  for i in Galaxy*; do cat $i | awk '$2 < NUMBER { print }' | wc -l ; done # sort -n
+  317  for i in Galaxy*; do cat $i | awk '$2 < 0 { print }' | wc -l ; done # sort -n
+  318  for i in Galaxy*; do cat $i | cut -f2 |sort| uniq ; done; #awk '$2 < 0 { print }' | wc -l ; done # sort -n
+  319  for i in Galaxy*; do cat $i | awk '$2 < 0 { print }' | wc -l ; done # sort -n
+  320  for i in Galaxy*; do cat $i | awk '$2 > 0 { print }' | wc -l ; done # sort -n
+  321  for i in Galaxy*; do cat $i | awk '$3 > 0 { print }' | wc -l ; done # sort -n
+  322  for i in Galaxy*; do cat $i | awk '$3 > 0 { print }' | wc -l ; done # sort -c
+  323  for i in Galaxy*; do cat $i | awk '$3 > 0 { print }' | sort -c ; done;
+  324  for i in Galaxy*; do cat $i | awk '$3 > 0 { print }' | sort | uniq ; done;
+  325  for i in Galaxy*; do cat $i | awk '$3 > 0 { print }' | cut -f3 | sort | uniq ; done;
+  326  for i in Galaxy*; do cat $i | awk '$3 > 0 { print }' | cut -f3 | sort -n | uniq ; done;
+  327  for i in Galaxy*; do cat $i | awk '$3 > 0 { print }' | wc -l ; done;
+  328  ls -1 | wc -l
+  329  ls
+  330  for i in Galaxy*; do echo $i; cat $i | awk '$3 > 0 { print }' | wc -l ; done;
+  331  for i in Galaxy*; do echo $i; cat $i | awk '$3 > 0 { print }' | wc -l ; done;
+  332  for i in Galaxy*; do echo $i; cat $i | awk '$3 > 0 { print }' > $i.mapped.genes; done;
+  333  cat *mapped.genes | head
+  334  for i in Galaxy*; do echo $i; cat $i | awk '$3 > 0 { print }' ; done;
+  335  for i in Galaxy*; do echo $i; cat $i | awk '$3 > 0 { print }' >> mapped.genes; done;
+  336  cat *.tabular.mapped.genes | cut -f1 | sed 's/lcl//g' | tr '|' '\t' | cut -f2 | tr '_' '\t' | cut -f2 | head
+  337  cat *.tabular.mapped.genes | cut -f1 | sed 's/lcl//g' | tr '|' '\t' | cut -f2 | tr '_' '\t' | cut -f3 | head
+  338  cat *.tabular.mapped.genes | cut -f1 | sed 's/lcl//g' | tr '|' '\t' | cut -f2 | tr '_' '\t' | cut -f3 | sort | uniq
+  339  cat *.tabular.mapped.genes | cut -f1 | sed 's/lcl//g' | tr '|' '\t' | cut -f2 | tr '_' '\t' | cut -f3 | sort > mapped.genes 
+  340  pwd
+  341  cat sequence.gb | grep -Fw "AAP12313.1"
+  342  cat coding.genes.fna | grep -Fw "AAP12313.1"
+  343  cat mapped.genes | wc -l
+  344  cat mapped.genes | head -2384
+  345  cat mapped.genes | sort | uniq | wc -l # head -2384
+  346  cat mapped.genes | sort | uniq 
+  347  cat mapped.genes | sort | uniq | wc -l
+  348  cat mapped.genes | sort | uniq | head 410
+  349  cat mapped.genes | sort | uniq | head -410
+  350  cat mapped.genes | sort | uniq | head -410 > mapped.genes
+  351  head mapped.genes 
+  352  grep -Fwf mapped.genes coding.genes.fna 
+  353  cat *.tabular.mapped.genes | cut -f1 | sort | uniq
+  354  grep -Fwf mapped.genes coding.genes.fna
+  355  cat *.tabular.mapped.genes | cut -f1 | sort | uniq
+  356  cat *.tabular.mapped.genes | cut -f1 | sort | uniq > mapped.genes
+  357  grep -Fwf mapped.genes coding.genes.fna
+  358  grep -Fwf mapped.genes coding.genes.fna > mapped.genes.txt
+  359  cat coding.genes.fna | grep ">"
+  360  cat coding.genes.fna | grep ">" | wc -l
+  361  cat mapped.genes.txt | grep ">" | wc -l
+  362  cd ../data/
+  363  ls
+  364  cd raw/
+  365  ls
+  366  for i in *.gz; do zcat $i | echo $((`wc -l`/4)); done;
+  367  for i in *.gz; do echo $i; zcat $i | echo $((`wc -l`/4)); done;
+  368  for i in *.gz; do echo $i; done # zcat $i | echo $((`wc -l`/4)); done;
+  369  for i in *.gz; do zcat $i | echo $((`wc -l`/4)); done;
+  370  cd ..
+  371  ls
+  372  cd ..
+  373  ls
+  374  cd QC/
+  375  ls
+  376  head mapped.genes.txt 
+  377  ls
+  378  for i in 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203; do cat Galaxy${i}* ; done;
+  379  for i in 186 187 188 189 190 191 192 193 194 195 196 197 198 199 200 201 202 203; do cat Galaxy${i}* | tr '*' '\t' ; done;
+  380  cd ..
+  381  cd scratch/read_counts/
+  382  ls
+  383  pwd
+  384  for i in {1..18}; do echo Sample${i}.tab; done;
+  385  for i in {1..18}; do ls Sample${i}.tab; done;
+  386  for i in {1..18}; do ls Sample${i}.tab; cat Sample${i}.tab | head; done;
+  387  for i in {1..18}; do ls Sample${i}.tab; cat Sample${i}.tab | cut -f1,3 | head -6 ; done;
+  388  for i in {1..18}; do ls Sample${i}.tab; cat Sample${i}.tab | cut -f1,3 | sed 's/lcl//g' | tr '|' '\t' | head -6 ; done;
+  389  for i in {1..18}; do cat Sample${i}.tab | cut -f1,3 | sed 's/lcl//g' | tr '|' '\t' | cut -f2,3 | head -6 ; done;
+  390  for i in {1..18}; do cat Sample${i}.tab | cut -f1,3 | sed 's/lcl//g' | tr '|' '\t' | cut -f2,3 > Sample${i}.txt ; done;
+  391  l
+  392  ls
+  393  cd Documents/1_OGFfiles/OG3301/
+  394  ls
+  395  mkdir data
+  396  mv NZGL01730* data/
+  397  sudo mv NZGL01730/* data/
+  398  ls
+  399  ls data/
+  400  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  401  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  402  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  403  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  404  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  405  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  406  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  407  cd Documents/1_OGFfiles/OG3301/soft/
+  408  ls
+  409  scp * elizabeth.permina@login.uoa.nesi.org.nz:/projects/uoo00095/soft
+  410  git clone --recursive https://github.com/alexdobin/STAR
+  411  cd STAR/source/
+  412  make STAR
+  413  ssh build-wm
+  414  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  415  cd Documents/1_OGFfiles/OG3301/
+  416  ls
+  417  ls
+  418  ls
+  419  ls NZGL01730
+  420  ls data/
+  421  ls data/NZGL01730_fastq/
+  422  scp * elizabeth.permina@login.uoa.nesi.org.nz:/projects/uoo00095/data1
+  423  cd data/NZGL01730_fastq/
+  424  scp * elizabeth.permina@login.uoa.nesi.org.nz:/projects/uoo00095/data1
+  425  cd ..
+  426  scp ../../../../Downloads/samtools-1.5.tar.bz2 elizabeth.permina@login.uoa.nesi.org.nz:/projects/uoo00095/data1
+  427  scp ../../../../Downloads/*tar.bz2 elizabeth.permina@login.uoa.nesi.org.nz:/projects/uoo00095/soft/
+  428  scp ../../../../Downloads/sam*tar.bz2 elizabeth.permina@login.uoa.nesi.org.nz:
+  429  scp ../../../../Downloads/hts*tar.bz2 elizabeth.permina@login.uoa.nesi.org.nz:
+  430  pwd
+  431  cd ../..
+  432  cd NZGL02390_follow-up/
+  433  ls
+  434  cd soft/
+  435  git clone --recursive git://github.com/ekg/freebayes.git
+  436  cd freebayes/
+  437  make
+  438  cd ..
+  439  cd
+  440  find . GenomeAnalysisTK*
+  441  find . -name "GenomeAnalysisTK*"
+  442  mv ./Documents/1_OGFfiles/NZGL00710_data_upload/code/GenomeAnalysisTK-3.6.tar.bz2 ./
+  443  scp -P 32080 GenomeAnalysisTK-3.6.tar.bz2 epermina@163.7.140.15:/home/epermina/project/nzgl02390/scratch/
+  444  tar xvjf GenomeAnalysisTK-3.6.tar.bz2 
+  445  java -jar GenomeAnalysisTK.jar -h
+  446  java -v
+  447  java -version
+  448  scp -P 32080 epermina@163.7.140.15:/home/epermina/project/nzgl02390/scratch/Experiment9StarAligned.out.sorted.bam* ./
+  449  scp -P 32080 epermina@163.7.140.15:/home/epermina/project/nzgl02390/scratch/edenaRaw8_contigs.fasta ./
+  450  pwd
+  451  cd Documents/1_OGFfiles/NZGL02390_follow-up/
+  452  ls
+  453  cd scratch/
+  454  ls
+  455  cat edenaRaw8_contigs.fasta | grep ">"
+  456  cat edenaRaw8_contigs.fasta | grep ">" |wc -l
+  457  nano pigeon_Mt.fasta
+  458  nano edena8reaarranged.txt
+  459  cat edena8reaarranged.txt | sed 's/\-/n/g'
+  460  cat edena8reaarranged.txt | sed 's/\-/n/g' >edena8reaarranged.txt1
+  461  awk '/^>/ {printf("%s%s\t",(N>0?"\n":""),$0);N++;next;} {printf("%s",$0);} END {printf("\n");}' < edena8reaarranged.txt1 > edena8reaarranged.fa
+  462  head edena8reaarranged.fa
+  463  nano edena8reaarranged.fa
+  464  cat edena8reaarranged.fa edenaRaw9_contigs.fasta > muscle8-9.fasta
+  465  nano muscle8-9.fasta 
+  466  mv muscle8-9.fasta muscle8-9.fasta.txt
+  467  ls
+  468  ls ../code
+  469  ls
+  470  ls ..
+  471  mv ../soft/clustal-omega-1.2\ \(1\).3-macosx ../soft/clustalo
+  472  chmod u+x ../soft/clustalo
+  473  ls
+  474  cd ..
+  475  cd data/
+  476  ls
+  477  du -sk CBKM2ANXX-2549-0*
+  478  du -sk CBKM2ANXX-2549-0*
+  479  du -sk CBKM2ANXX-2549-0*
+  480  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org│Sample8-9.bbcols                                                muscle8-9BC.fasta.aln
+  481  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  482  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  483  ls
+  484  cd
+  485  cd Documents/1_OGFfiles/OG3301/
+  486  mkdir scratch
+  487  cd scratch/
+  488  for i in {29..44}; do echo "wget" >> wget.text; done;
+  489  ls
+  490  more wget.text 
+  491  wc -l wget.text 
+  492  nano address.txt
+  493  wc -l address.txt 
+  494  paste wget.text address.txt > wget.text.sh
+  495  more wget.text.sh 
+  496  scp wget.text.sh elizabeth.permina@login.uoa.nesi.org.nz:/projects/uoo00095/scratch
+  497  ssh -i ~/.ssh/pan_rsa_key elizabeth.permina@login.uoa.nesi.org.nz
+  498  /Users/elizabethpermina/Documents/1_OGFfiles/Workshop/1_RNA-Seq/soft/SolexaQA++_v3.1.7.1/MacOs_10.7+/SolexaQA++ ; exit;
+  499  cd
+  500  cd Documents/1_OGFfiles/Workshop/1_RNA-Seq/
+  501  dynamictrim
+  502  cd soft/
+  503  ls
+  504  cd SolexaQA++_v3.1.7.1
+  505  ls
+  506  cd MacOs_10.7+/
+  507  ls
+  508  ./SolexaQA++ -h
+  509  ./SolexaQA++ dynamictrim -h
+  510  cd ../..
+  511  cd ..
+  512  ls ../../../SolexaQA++
+  513  ls ../../SolexaQA++
+  514  ls #SolexaQA++
+  515  ls ../soft/
+  516  ls soft/SolexaQA++_v3.1.7.1/MacOs_10.7+/SolexaQA++ 
+  517  ls data/
+  518  ls data/*fastq
+  519  curl -h
+  520  curl -o data/GSM461180_treat_paired_subset_1.fastq https://zenodo.org/record/61765/files/GSM461180_treat_paired_subset_1.fastq
+  521  curl -o data/GSM461180_treat_paired_subset_2.fastq https://zenodo.org/record/61765/files/GSM461180_treat_paired_subset_2.fastq
+  522  curl -o data/GSM461181_treat_paired_subset_1.fastq https://zenodo.org/record/61765/files/GSM461181_treat_paired_subset_1.fastq
+  523  curl -o data/GSM461181_treat_paired_subset_2.fastq https://zenodo.org/record/61765/files/GSM461181_treat_paired_subset_2.fastq
+  524  more data/Galaxy242-idxstats.tabular 
+  525  more data/Galaxy254-IdxStats.tab 
+  526  mv data/Galaxy254-IdxStats.tab data/Galaxy254-IdxStats.txt
+  527  ls
+  528  cd data/
+  529  ls
+  530  cat dm2L.fna | grep ">"
+  531  ls
+  532  cat *.fna > dm.genes.fna
+  533  mv dmY.txt dmY.fna
+  534  cat *.fna > dm.genes.fna
+  535  cd ..
+  536  mkdir code
+  537  cd code/
+  538  curl -L -O https://github.com/ngs-docs/angus/raw/change_link_for_edgeR_script/_static/yeast.salmon.R
+  539  curl -L -O https://raw.githubusercontent.com/ngs-docs/angus/change_link_for_edgeR_script/_static/gather-counts.py
+  540  cd ..
+  541  ls
+  542  mkdir LocalFiles
+  543  mv Thursday_MB_RNASeq_Tools.pdf LocalFiles/
+  544  mv *.docx LocalFiles/
+  545  mv *.pdf LocalFiles/
+  546  mv mapping_soft_and_the_argument_against_negative_binomial LocalFiles/ 
+  547  mv NZGLRna-seq1_2016.pptx LocalFiles/
+  548  ls
+  549  mv Todd_et_al-2016-Molecular_Ecology.xlsx LocalFiles/
+  550  mv Papers/ LocalFiles/
+  551  ls
+  552  ls data/
+  553  mkdir dros
+  554  mv dros/ data/
+  555  mv data/GSM4611* data/dros/
+  556  mv data/dm.genes.fna data/dros/
+  557  rm data/dm*
+  558  mkdir data/yeast
+  559  cd data/yeast/
+  560  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458500/ERR458500.fastq.gz
+  561  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458501/ERR458501.fastq.gz
+  562  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458502/ERR458502.fastq.gz
+  563  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458493/ERR458493.fastq.gz
+  564  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458494/ERR458494.fastq.gz
+  565  curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458495/ERR458495.fastq.gz
+  566  cd ..
+  567  ls
+  568  head treat1.tabular 
+  569  head treat1.tabular cat treat1.tabular | cut -f1 | head
+  570  cat treat1.tabular | cut -f1 | head
+  571  cat treat1.tabular | cut -f1 > names
+  572  for i in *treated*; do ls $i; done
+  573  for i in *treat*; do ls $i; done
+  574  for i in *treat*; do cut -f4 $i > reads.$i; done
+  575  paste names reads.* | head
+  576  paste names reads.* > dros.count.reads
+  577  nano dros.count.reads 
+  578  for i in *treat*; do cut -f5 $i > reads.$i; done
+  579  paste names reads.* > dros.count.reads
+  580  paste names reads.* | head
+  581  rm dros.count.reads 
+  582  ls reads.*
+  583  rm reads.reads.*
+  584  paste names reads.* | head
+  585  paste names reads.* > dros.count.reads
+  586  nano dros.count.reads 
+  587  curl -L -O https://raw.githubusercontent.com/ngs-docs/angus/change_link_for_edgeR_script/_static/gather-counts.py
+  588  more gather-counts.py 
+  589  curl -L -O https://github.com/ngs-docs/angus/raw/change_link_for_edgeR_script/_static/yeast.salmon.R
+  590  more yeast.salmon.R 
+  591  more gather-counts.py 
+  592  mkdir treat1
+  593  mkdir treat2
+  594  mkdir untreat1
+  595  mkdir untreat2
+  596  mv treat1.tabular treat1/quant.sf
+  597  mv treat2.tabular treat2/quant.sf
+  598  mv untreat2.tabular untreat2/quant.sf
+  599  mv untreat1.tabular untreat1/quant.sf
+  600  python2 gather-counts.py
+  601  ls
+  602  head treat1.counts 
+  603  paste treat1/quant.sf treat1.counts | head -30
+  604  ls
+  605  ls pwd
+  606  pwd
+  607  ls
+  608  du -sh dros/
+  609  cd dros/
+  610  ls
+  611  curl -O https://zenodo.org/record/61765/files/GSM461178_untreat_paired_subset_2.fastq
+  612  cd ..
+  613  ls yeast/
+  614  du -sh yeast/
+  615  cd ..
+  616  ls
+  617  ls
+  618  ls data/
+  619  mv data/yeast/ ./
+  620  ls
+  621  mv data/dros/ ./
+  622  ls data/
+  623  mv data/asthma/ ./
+  624  mkdir slides
+  625  mv *.pptx slides/
+  626  nano .gitignore
+  627  nano .gitignore
+  628  nano .gitignore
+  629  ls
+  630  mkdir yeast/data
+  631  mkdir data/raw
+  632  mkdir data/processed
+  633  mv data/* yeast/
+  634  ls
+  635  ls yeast/data/
+  636  mkdir yeast/data/raw
+  637  mkdir yeast/data/processed
+  638  ls
+  639  ls data/
+  640  rm -rf data
+  641  ls 
+  642  ls yeast/
+  643  rm -rf yeast/raw/
+  644  rm -rf yeast/processed/
+  645  mv yeast/ERR458* yeast/data/raw/
+  646  soft/SolexaQA++_v3.1.7.1/MacOs_10.7+/SolexaQA++ dynamictrim yeast/data/raw/ERR458493.fastq.gz -phredcutoff 20 -d yeast/data/processed
+  647  soft/SolexaQA++_v3.1.7.1/MacOs_10.7+/SolexaQA++ dynamictrim
+  648  ls yeast/data/processed/
+  649  for i in yeast/data/raw/*.fastq.gz; do soft/SolexaQA++_v3.1.7.1/MacOs_10.7+/SolexaQA++ dynamictrim $i --phredcutoff 20 -d yeast/data/processed; done
+  650  cp slides/RNA-Seq_quotes_slides_.pptx slides/RNA-Seq_quotes.pptx 
+  651  ls 
+  652  ls yeast/
+  653  ls yeast/data/processed/
+  654  cd yeast/data/processed/
+  655  ls
+  656  rm *segments*
+  657  ls
+  658  cd ..
+  659  cd ..
+  660  cd ..
+  661  ls
+  662  cd soft/
+  663  ls
+  664  tar xzvf Salmon-0.8.2_macOS_10.12.tar.gz 
+  665  ./Salmon-0.8.2_macOX_10.12/bin/salmon -h
+  666  pwd
+  667  cd Salmon-0.8.2_macOX_10.12/
+  668  ls
+  669  cd bin/
+  670  pwd
+  671  ls
+  672  DYLD_FALLBACK_LIBRARY_PATH=/Users/elizabethpermina/Documents/1_OGFfiles/Workshop/1_RNA-Seq/soft/Salmon-0.8.2_macOX_10.12/lib ./salmon -h
+  673  path=/Users/elizabethpermina/Documents/1_OGFfiles/Workshop/1_RNA-Seq/soft/Salmon-0.8.2_macOX_10.12/
+  674  cd ..
+  675  cd ..
+  676  cd ..
+  677  cd yeast/
+  678  ls
+  679  mkdir scratch
+  680  mkdir scratch/reference
+  681  cd scratch/reference/
+  682  curl -O http://downloads.yeastgenome.org/sequence/S288C_reference/orf_dna/orf_coding.fasta.gz
+  683  pwd
+  684  orf_coding=/Users/elizabethpermina/Documents/1_OGFfiles/Workshop/1_RNA-Seq/yeast/scratch/reference/orf_coding.fasta.gz
+  685  ls
+  686  DYLD_FALLBACK_LIBRARY_PATH=/${path}/lib ./${path}/bin/salmon index --index yeast_orfs --type quasi --transcripts orf_coding.fasta.gz 
+  687  DYLD_FALLBACK_LIBRARY_PATH=/${path}/lib ./${path}bin/salmon index --index yeast_orfs --type quasi --transcripts orf_coding.fasta.gz 
+  688  DYLD_FALLBACK_LIBRARY_PATH=/${path}/lib .${path}bin/salmon index --index yeast_orfs --type quasi --transcripts orf_coding.fasta.gz 
+  689  DYLD_FALLBACK_LIBRARY_PATH=/${path}/lib ${path}bin/salmon index --index yeast_orfs --type quasi --transcripts orf_coding.fasta.gz 
+  690  ls
+  691  cd ..
+  692  ls
+  693  cd ../data/
+  694  ls
+  695  pwd
+  696  for i in ${dataPath}/raw/*.fastq.gz; do    DYLD_FALLBACK_LIBRARY_PATH=/${path}/lib ${path}bin/salmon quant -i reference/yeast_orfs --libType U -r $i -o $i.quant --seqBias --gcBias; done
+  697  dataPath=/Users/elizabethpermina/Documents/1_OGFfiles/Workshop/1_RNA-Seq/yeast/data
+  698  for i in ${dataPath}/raw/*.fastq.gz; do    DYLD_FALLBACK_LIBRARY_PATH=/${path}/lib ${path}bin/salmon quant -i reference/yeast_orfs --libType U -r $i -o $i.quant --seqBias --gcBias; done
+  699  ls
+  700  ls /Users/elizabethpermina/Documents/1_OGFfiles/Workshop/1_RNA-Seq/
+  701  ls /Users/elizabethpermina/Documents/1_OGFfiles/Workshop/1_RNA-Seq/yeast/scratch/reference/yeast_orfs/
+  702  dataPath=/Users/elizabethpermina/Documents/1_OGFfiles/Workshop/1_RNA-Seq/yeast/data
+  703  reference=/Users/elizabethpermina/Documents/1_OGFfiles/Workshop/1_RNA-Seq/yeast/scratch/reference/
+  704  for i in ${dataPath}/raw/*.fastq.gz; do    DYLD_FALLBACK_LIBRARY_PATH=/${path}/lib ${path}bin/salmon quant -i ${reference}yeast_orfs --libType U -r $i -o $i.quant --seqBias --gcBias; done
+  705  ls
+  706  ls raw/
+  707  du -sk raw/*.quant
+  708  more raw/ERR458494.fastq.gz.quant
+  709  ls raw/*.fastq.gz.quant/
+  710  for i in raw/*.gz; do echo $i; zcat $i | echo $((`wc -l`/4)) ; done;
+  711  cd ..
+  712  cd scratch/reference/
+  713  ls
+  714  unzip orf_coding.fasta.gz 
+  715  gunzip orf_coding.fasta.gz 
+  716  tar -zvxf orf_coding.fasta.gz 
+  717  file orf_coding.fasta.gz 
+  718  gunzip orf_coding.fasta.gz 
+  719  gunzip orf_coding.gz
+  720  ls
+  721  rm orf_coding.fasta.gz 
+  722  rm -rf yeast_orfs/*
+  723  DYLD_FALLBACK_LIBRARY_PATH=/${path}/lib ${path}bin/salmon index --index yeast_orfs --type quasi --transcripts orf_coding
+  724  cd ..
+  725  cd ..
+  726  ls
+  727  ls ${reference}yeast_orfs 
+  728  ls ${dataPath}/raw/*.fastq.gz
+  729  for i in ${dataPath}/raw/*.fastq.gz; do    DYLD_FALLBACK_LIBRARY_PATH=/${path}/lib ${path}bin/salmon quant -i ${reference}yeast_orfs --libType U -r $i -o $i.quant --seqBias --gcBias; done
+  730  cp ../dros/gather-counts.py data/raw/
+  731  python ./data/raw/gather-counts.py 
+  732  ls
+  733  ls -1 *counts
+  734  history > log.txt
