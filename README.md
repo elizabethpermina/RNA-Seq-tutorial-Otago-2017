@@ -1,6 +1,23 @@
 # RNA-Seq-tutorial-Otago-2017
 RNA-Seq tutorial materials - slides, training data, code lines
-Training materials - https://zenodo.org/record/61765#.We6iIBOCzVE
+Training materials -
+
+# get the data in:
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458500/ERR458500.fastq.gz
+
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458501/ERR458501.fastq.gz
+
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458502/ERR458502.fastq.gz
+
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458493/ERR458493.fastq.gz
+
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458494/ERR458494.fastq.gz
+
+ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/ERR458495/ERR458495.fastq.gz
+
+# get the reference
+curl -O http://downloads.yeastgenome.org/sequence/S288C_reference/orf_dna/orf_coding.fasta.gz
+
 
 # ETHERPAD WITH LINKS FOR THIS WORKSHOP IS HERE: 
 https://beta.etherpad.org/p/H9l6EdbQfR
