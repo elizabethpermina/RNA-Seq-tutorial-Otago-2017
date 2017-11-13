@@ -52,7 +52,9 @@ Mapping output (SAM/BAM format)
 Usage of important NGS toolkits (samtools, BEDtools)
 Mapping statistics
 Visualization of mapped reads (IGV, UCSC, Tablet)
-Training material could be taken from here: https://zenodo.org/record/61765#.We6iIBOCzVE
+Training material could be taken from here: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR458/
+(yeast data, 2 conditions (mt,mt,mt, wt,wt,wt) 
+Alternative dataset is here: https://zenodo.org/record/61765#.We6iIBOCzVE
 
 3. RNA-seq Data Analyses
 Understand split-read mapping
