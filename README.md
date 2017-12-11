@@ -75,3 +75,11 @@ Gviz
 Types of vizual data representation
 Making reports with knitr and Rmarkdown
 
+
+# Genomics Virtual Lab via NeCTAR
+We will be using an instance of Genomics Virtual Lab which will run on the University of Auckland [NeCTAR](https://nectar.org.au/labs-and-tools/) Node - supported by the [Centre for eResearch](http://www.eresearch.auckland.ac.nz/). 
+
+* NeCTAR (National eResearch Collaboration Tools and Resources) is a federated research cloud hosted in 7 Australian institutions, and is now a pilot service at University of Auckland.
+* NeCTAR provides virtual computing resources, virtual labs (such as the one used in this workshop), scientific clouds, and collaborative workflows to assist researchers.
+* If you are a postgraduate or staff researcher at UoA and would like to get on board (free of charge), please contact Centre for
+eResearch Staff:  nectar@auckland.ac.nz
