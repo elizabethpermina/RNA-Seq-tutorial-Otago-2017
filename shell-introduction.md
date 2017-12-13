@@ -17,6 +17,14 @@ cp -r /mnt/genomics/Workshop/sample-data .
 cat 
 ```
 
+```
+pawlik@r-knj783wz-0:~/sample-data$ wc -c *.fastq
+```
+
+```
+pawlik@r-knj783wz-0:~/sample-data$ wc -c *.fastq | head -n -1 | sort -n > file_size.txt
+```
+
 
 
 ## References
