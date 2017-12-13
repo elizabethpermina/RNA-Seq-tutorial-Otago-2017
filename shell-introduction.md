@@ -25,7 +25,10 @@ pawlik@r-knj783wz-0:~/sample-data$ wc -c *.fastq
 pawlik@r-knj783wz-0:~/sample-data$ wc -c *.fastq | head -n -1 | sort -n > file_size.txt
 ```
 
-
+Count the number of occurrences of a string:
+```
+grep -o 'ignore this line' test-small.fastq | wc -l
+```
 
 ## References
 * [Hands-on self-study shell course](http://swcarpentry.github.io/shell-novice)
