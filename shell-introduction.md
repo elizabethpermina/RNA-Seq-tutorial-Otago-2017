@@ -35,6 +35,22 @@ grep -c 'ignore this line' test-small.fastq
 grep -ci 'ignore this line' *.fastq
 ```
 
+Output:
+
+```
+sample_1.fastq:0
+sample_2.fastq:0
+sample_3.fastq:0
+sample_4.fastq:0
+sample_5.fastq:0
+sample_6.fastq:0
+test-high-gc-1.fastq:3000
+test-high-gc-2.fastq:3000
+test-moderate-gc-1.fastq:3000
+test-moderate-gc-2.fastq:3000
+test-small.fastq:3
+```
+
 
 [Few more notes on grep](https://help.ubuntu.com/community/grep)
 
