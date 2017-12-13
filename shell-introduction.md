@@ -51,6 +51,12 @@ test-moderate-gc-2.fastq:3000
 test-small.fastq:3
 ```
 
+Using `cut`:
+
+```
+grep -ci 'ignore this line' *.fastq | cut -f 2 -d ':'
+```
+
 
 [Few more notes on grep](https://help.ubuntu.com/community/grep)
 
