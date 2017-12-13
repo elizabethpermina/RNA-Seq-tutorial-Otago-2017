@@ -51,6 +51,17 @@ test-moderate-gc-2.fastq:3000
 test-small.fastq:3
 ```
 
+This takes a while so it may make sense to save the output in the file
+```
+grep -ci 'ignore this line' *.fastq > count.txt
+```
+
+How to sort?
+
+```
+sort -t ':' -k2 -n count.txt
+```
+
 Using `cut`:
 
 ```
