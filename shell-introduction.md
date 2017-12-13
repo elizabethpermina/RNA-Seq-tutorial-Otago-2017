@@ -27,8 +27,16 @@ pawlik@r-knj783wz-0:~/sample-data$ wc -c *.fastq | head -n -1 | sort -n > file_s
 
 Count the number of occurrences of a string:
 ```
-grep -o 'ignore this line' test-small.fastq | wc -l
+grep -c 'ignore this line' test-small.fastq 
 ```
+
+
+```
+grep -ci 'ignore this line' *.fastq
+```
+
+
+[Few more notes on grep](https://help.ubuntu.com/community/grep)
 
 ## References
 * [Hands-on self-study shell course](http://swcarpentry.github.io/shell-novice)
