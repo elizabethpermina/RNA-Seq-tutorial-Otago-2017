@@ -20,8 +20,8 @@ cat
 
 
 ## References
-[Hands-on self-study shell course](http://swcarpentry.github.io/shell-novice)
-[Useful commands](https://github.com/joseah/command-line-for-bioinformatics/blob/master/commands.md)
-[More useful commands](https://github.com/joseah/command-line-for-bioinformatics)
-[Some more advanced commands](http://williamslab.bscb.cornell.edu/?page_id=235)
+* [Hands-on self-study shell course](http://swcarpentry.github.io/shell-novice)
+* [Useful commands](https://github.com/joseah/command-line-for-bioinformatics/blob/master/commands.md)
+* [More useful commands](https://github.com/joseah/command-line-for-bioinformatics)
+* [Some more advanced commands](http://williamslab.bscb.cornell.edu/?page_id=235)
 
